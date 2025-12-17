@@ -1,0 +1,1002 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="http://ieeexplore.ieee.org/document/5386621/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0018-8670"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aizenbud-Reshef</foaf:surname>
+                        <foaf:givenName>N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nolan</foaf:surname>
+                        <foaf:givenName>B. T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rubin</foaf:surname>
+                        <foaf:givenName>J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shaham-Gafni</foaf:surname>
+                        <foaf:givenName>Y.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_203"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:subject>tooling</dc:subject>
+        <dc:subject>programming</dc:subject>
+        <dc:title>Model traceability</dc:title>
+        <dc:date>2006</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/5386621/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:40:30</dcterms:dateSubmitted>
+        <bib:pages>515-526</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0018-8670">
+        <prism:volume>45</prism:volume>
+        <dc:title>IBM Systems Journal</dc:title>
+        <dc:identifier>DOI 10.1147/sj.453.0515</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>IBM Syst. J.</dcterms:alternative>
+        <dc:identifier>ISSN 0018-8670</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_203">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/203/Aizenbud-Reshef и др. - 2006 - Model traceability.pdf"/>
+        <dc:title>Aizenbud-Reshef и др. - 2006 - Model traceability.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.emerald.com/scm/article/24/1/85-106/356450">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1359-8546"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Garcia-Torres</foaf:surname>
+                        <foaf:givenName>Sofia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Albareda</foaf:surname>
+                        <foaf:givenName>Laura</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rey-Garcia</foaf:surname>
+                        <foaf:givenName>Marta</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Seuring</foaf:surname>
+                        <foaf:givenName>Stefan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_205"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:subject>tooling</dc:subject>
+        <dc:subject>engineering</dc:subject>
+        <dc:title>Traceability for sustainability – literature review and conceptual framework</dc:title>
+        <dcterms:abstract>Purpose
+              This paper aims to examine how companies enact traceability in their global supply chains (SCs) to achieve sustainability goals and how this so-called traceability for sustainability (TfS) can contribute to (sustainable) supply chain management ([S]SCM). For this, the paper focuses on the paramount example of the apparel industry.
+            
+            
+              Design/methodology/approach
+              This study presents an integrative and systematic literature review of 89 peer-reviewed journal articles on the confluence of traceability and sustainability in global apparel SCs. It comprises content analysis and abductive category-building based on previous literature.
+            
+            
+              Findings
+              A conceptual framework emerges to describe TfS as an evolving cycle, comprising three dimensions: governance, collaboration and tracking and tracing. Resources and capabilities literature set the foundations for conceiving TfS as a distinctive meta-capability construct. Hence, besides being associated to increased performance, risk management and SC process transformation, TfS ultimately blurs boundaries and integrates non-traditional SC actors into the same ecosystem with important implications for sustainability and (S)SCM. This study refers to the industrial upgrading potential of global SCs to explain how leveraging enabling technologies for TfS may help to improve the triple-bottom-line (TBL) performance of the actors in the broad ecosystem while reducing the risks associated to those technologies. Thus, TfS can contribute to (S)SCM and to TBL sustainability within and beyond SC boundaries.
+            
+            
+              Originality/value
+              This study conceptually frames (S)SCM exploring TfS as a meta-capability and contributes to the underexplored question of how to achieve sustainability in global SCs.</dcterms:abstract>
+        <dc:date>2019</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.emerald.com/scm/article/24/1/85-106/356450</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:40:37</dcterms:dateSubmitted>
+        <dc:rights>https://www.emerald.com/insight/site-policies</dc:rights>
+        <bib:pages>85-106</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1359-8546">
+        <prism:volume>24</prism:volume>
+        <dc:title>Supply Chain Management: An International Journal</dc:title>
+        <dc:identifier>DOI 10.1108/SCM-04-2018-0152</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>SCM</dcterms:alternative>
+        <dc:identifier>ISSN 1359-8546</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_205">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/205/Garcia-Torres и др. - 2019 - Traceability for sustainability – literature revie.pdf"/>
+        <dc:title>Garcia-Torres и др. - 2019 - Traceability for sustainability – literature revie.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-981-256-273-9%20978-981-4480-70-3">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-981-256-273-9 978-981-4480-70-3</dc:identifier>
+                <dc:title>Handbook Of Software Engineering And Knowledge Engineering</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>WORLD SCIENTIFIC</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:bookAuthors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chang</foaf:surname>
+                        <foaf:givenName>S K</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:bookAuthors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spanoudakis</foaf:surname>
+                        <foaf:givenName>George</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zisman</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_206"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:subject>programming</dc:subject>
+        <dc:subject>network</dc:subject>
+        <dc:title>SOFTWARE TRACEABILITY: A ROADMAP</dc:title>
+        <dcterms:abstract>Traceability of software artefacts has been recognised as an important factor for supporting various activities in the software system development process. In general, the objective of traceability is to improve the quality of software systems. More specifically, traceability information can be used to support the analysis of implications and integration of changes that occur software systems; the maintenance and evolution of software systems; the reuse of software system components by identifying and comparing requirements of new and existing systems; the testing of software system components; and system inspection, by indicating alternatives and compromises made during development. Traceability enables system acceptance by allowing users to better understand the system and contributes to clear and consistent system documentation. Over the last few years, the software and system engineering communities have developed a large number of approaches and techniques to address various aspects of traceability. Research into software traceability has been mainly concerned with the study and definition of different types of traceability relations; support for the generation of traceability relations; development of architectures, tools, and environments for the representation and maintenance of traceability relations; and empirical investigations into organisational practices regarding the establishment and deployment of traceability relations in the software development life cycle. However, despite its importance and the work resulted from numerous years of research, empirical studies of traceability needs and practices in industrial organisations have indicated that traceability support is not always satisfactory. As a result, traceability is rarely established in existing industrial settings. In this article, we present a roadmap of research and practices related to software traceability and identify issues that are still open for further research. Our roadmap is organised according to the main topics that have been the focus of software traceability research.</dcterms:abstract>
+        <dc:date>2005</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>SOFTWARE TRACEABILITY</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.worldscientific.com/doi/abs/10.1142/9789812775245_0014</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:40:39</dcterms:dateSubmitted>
+        <dc:description>DOI: 10.1142/9789812775245_0014</dc:description>
+        <bib:pages>395-428</bib:pages>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_206">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/206/Spanoudakis и Zisman - 2005 - SOFTWARE TRACEABILITY A ROADMAP.pdf"/>
+        <dc:title>Spanoudakis и Zisman - 2005 - SOFTWARE TRACEABILITY A ROADMAP.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-2865-4">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>ISBN 978-1-4503-2865-4</dc:identifier>
+                <dc:title>Future of Software Engineering Proceedings</dc:title>
+                <dc:identifier>DOI 10.1145/2593882.2593891</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Hyderabad India</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>ACM</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cleland-Huang</foaf:surname>
+                        <foaf:givenName>Jane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gotel</foaf:surname>
+                        <foaf:givenName>Orlena C. Z.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huffman Hayes</foaf:surname>
+                        <foaf:givenName>Jane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mäder</foaf:surname>
+                        <foaf:givenName>Patrick</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zisman</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_207"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:subject>tooling</dc:subject>
+        <dc:title>Software traceability: trends and future directions</dc:title>
+        <dcterms:abstract>Software traceability is a sought-after, yet often elusive quality in software-intensive systems. Required in safety-critical systems by many certifying bodies, such as the USA Federal Aviation Authority, software traceability is an essential element of the software development process. In practice, traceability is often conducted in an ad-hoc, after-the-fact manner and, therefore, its beneﬁts are not always fully realized. Over the past decade, researchers have focused on speciﬁc areas of the traceability problem, developing more sophisticated tooling, promoting strategic planning, applying information retrieval techniques capable of semi-automating the trace creation and maintenance process, developing new trace query languages and visualization techniques that use trace links, and applying traceability in speciﬁc domains such as Model Driven Development, product line systems, and agile project environments. In this paper, we build upon a prior body of work to highlight the state-of-the-art in software traceability, and to present compelling areas of research that need to be addressed.</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Software traceability</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/2593882.2593891</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:40:42</dcterms:dateSubmitted>
+        <bib:pages>55-69</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>ICSE '14: 36th International Conference on Software Engineering</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_207">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/207/Cleland-Huang и др. - 2014 - Software traceability trends and future direction.pdf"/>
+        <dc:title>Cleland-Huang и др. - 2014 - Software traceability trends and future direction.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://ieeexplore.ieee.org/document/4249808/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0018-9162"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cleland-Huang</foaf:surname>
+                        <foaf:givenName>Jane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berenbach</foaf:surname>
+                        <foaf:givenName>Brian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Clark</foaf:surname>
+                        <foaf:givenName>Stephen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Settimi</foaf:surname>
+                        <foaf:givenName>Raffaella</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Romanova</foaf:surname>
+                        <foaf:givenName>Eli</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_209"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:subject>network</dc:subject>
+        <dc:title>Best Practices for Automated Traceability</dc:title>
+        <dc:date>2007</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/4249808/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:40:46</dcterms:dateSubmitted>
+        <dc:rights>https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html</dc:rights>
+        <bib:pages>27-35</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0018-9162">
+        <prism:volume>40</prism:volume>
+        <dc:title>Computer</dc:title>
+        <dc:identifier>DOI 10.1109/MC.2007.195</dc:identifier>
+        <prism:number>6</prism:number>
+        <dcterms:alternative>Computer</dcterms:alternative>
+        <dc:identifier>ISSN 0018-9162</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_209">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/209/Cleland-Huang и др. - 2007 - Best Practices for Automated Traceability.pdf"/>
+        <dc:title>Cleland-Huang и др. - 2007 - Best Practices for Automated Traceability.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://journals.sagepub.com/doi/10.5367/000000001101293724">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0030-7270,%202043-6866"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Opara</foaf:surname>
+                        <foaf:givenName>Linus U.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mazaud</foaf:surname>
+                        <foaf:givenName>François</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_221"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:title>Food Traceability from Field to Plate</dc:title>
+        <dcterms:abstract>Several factors have led to intensified public scrutiny of the human food supply chain. Consumer concerns for food safety, animal welfare, and the environmental and ecological impact of food production and agro-processing have become increasingly important. These concerns have been exacerbated by several factors, including the trend towards further globalization of the food supply chain, the incidence of new and emerging safety hazards such as the human form of BSE (mad cow disease), and illnesses and deaths resulting from contamination of fresh and processed food. As a consequence of these growing concerns, consumers and other stakeholders in agroindustry now demand transparency in the way food is grown and handled throughout the supply chain, resulting in the emergence of ‘traceability’ as an important policy issue in food quality and safety. This paper provides a global overview of ‘traceability’ as a quality index in food trade, and discusses some of the drivers in both developed and developing countries. Policy changes are necessary specifically to incorporate traceability into existing food safety regulations and trade agreements. This will require further investments in information technology for data capture, storage and retrieval. Small-scale farmers in many developing regions moving towards market orientation face considerable technical and financial challenges in implementing appropriate food traceability systems in order to meet marketing compliance requirements.</dcterms:abstract>
+        <dc:date>2001</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.sagepub.com/doi/10.5367/000000001101293724</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:42:33</dcterms:dateSubmitted>
+        <dc:rights>https://journals.sagepub.com/page/policies/text-and-data-mining-license</dc:rights>
+        <bib:pages>239-247</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0030-7270,%202043-6866">
+        <prism:volume>30</prism:volume>
+        <dc:title>Outlook on Agriculture</dc:title>
+        <dc:identifier>DOI 10.5367/000000001101293724</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>Outlook Agric</dcterms:alternative>
+        <dc:identifier>ISSN 0030-7270, 2043-6866</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_221">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/221/Opara и Mazaud - 2001 - Food Traceability from Field to Plate.pdf"/>
+        <dc:title>Opara и Mazaud - 2001 - Food Traceability from Field to Plate.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://link.springer.com/10.1007/s12652-019-01532-7">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1868-5137,%201868-5145"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bougdira</foaf:surname>
+                        <foaf:givenName>Abdesselam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Akharraz</foaf:surname>
+                        <foaf:givenName>Ismail</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ahaitouf</foaf:surname>
+                        <foaf:givenName>Abdelaziz</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_223"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:subject>network</dc:subject>
+        <dc:title>A traceability proposal for industry 4.0</dc:title>
+        <dcterms:abstract>This research examines traceability and its model in industry 4.0. Hence, this paper introduces the main design features of this model. The fourth industrial revolution is an environment that combines manufacturing with the Internet of Things and cyber-physical Systems. In such an environment, various sources (i.e., smart products, intelligent agents, and sensors) generate an increasing amount of data, which is essential for effective traceability. However, due to these heterogeneous sources, a traceability system should face the interoperability challenge and overcome the data integration issue. Moreover, the incorporation of this information in a traceability tool is motivated by the requirement to have access to a maximum amount of accurate product data. Thus, this article proposes to take advantage of industry 4.0 information. Also, the present study advocates that traceability should not only allow trace and track but also ensure product safety and quality. Accordingly, the proposal includes an intelligent traceability description, an ontology-based modeling, and a cloud-based application. This system provides users with a common knowledge base to access and represent data. Also, this model enables users to share and query remotely the traceable information using the cloud.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/s12652-019-01532-7</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:42:36</dcterms:dateSubmitted>
+        <bib:pages>3355-3369</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1868-5137,%201868-5145">
+        <prism:volume>11</prism:volume>
+        <dc:title>Journal of Ambient Intelligence and Humanized Computing</dc:title>
+        <dc:identifier>DOI 10.1007/s12652-019-01532-7</dc:identifier>
+        <prism:number>8</prism:number>
+        <dcterms:alternative>J Ambient Intell Human Comput</dcterms:alternative>
+        <dc:identifier>ISSN 1868-5137, 1868-5145</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_223">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/223/Bougdira и др. - 2020 - A traceability proposal for industry 4.0.pdf"/>
+        <dc:title>Bougdira и др. - 2020 - A traceability proposal for industry 4.0.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://dl.acm.org/doi/10.1145/290133.290147">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0001-0782,%201557-7317"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ramesh</foaf:surname>
+                        <foaf:givenName>Balasubramaniam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_224"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>engineering</dc:subject>
+        <dc:subject>network</dc:subject>
+        <dc:title>Factors influencing requirements traceability practice</dc:title>
+        <dc:date>1998</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://dl.acm.org/doi/10.1145/290133.290147</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:42:39</dcterms:dateSubmitted>
+        <bib:pages>37-44</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0001-0782,%201557-7317">
+        <prism:volume>41</prism:volume>
+        <dc:title>Communications of the ACM</dc:title>
+        <dc:identifier>DOI 10.1145/290133.290147</dc:identifier>
+        <prism:number>12</prism:number>
+        <dcterms:alternative>Commun. ACM</dcterms:alternative>
+        <dc:identifier>ISSN 0001-0782, 1557-7317</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_224">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/224/Ramesh - 1998 - Factors influencing requirements traceability prac.pdf"/>
+        <dc:title>Ramesh - 1998 - Factors influencing requirements traceability prac.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.emerald.com/bfj/article/109/10/805-818/64660">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0007-070X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Senneset</foaf:surname>
+                        <foaf:givenName>Gunnar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Forås</foaf:surname>
+                        <foaf:givenName>Eskil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fremme</foaf:surname>
+                        <foaf:givenName>Kari M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_228"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:subject>network</dc:subject>
+        <dc:title>Challenges regarding implementation of electronic chain traceability</dc:title>
+        <dcterms:abstract>Purpose – Increased focus on safe and healthy food has resulted in the need for implementing electronic chain traceability. This poses challenges both regarding technical solutions and business processes. The purpose of this paper is to report from a research project where implementation in a value chain for farmed salmon is used to investigate these challenges.</dcterms:abstract>
+        <dc:date>2007</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.emerald.com/bfj/article/109/10/805-818/64660</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:48:08</dcterms:dateSubmitted>
+        <dc:rights>https://www.emerald.com/insight/site-policies</dc:rights>
+        <bib:pages>805-818</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0007-070X">
+        <prism:volume>109</prism:volume>
+        <dc:title>British Food Journal</dc:title>
+        <dc:identifier>DOI 10.1108/00070700710821340</dc:identifier>
+        <prism:number>10</prism:number>
+        <dc:identifier>ISSN 0007-070X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_228">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/228/Senneset и др. - 2007 - Challenges regarding implementation of electronic .pdf"/>
+        <dc:title>Senneset и др. - 2007 - Challenges regarding implementation of electronic .pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4244-2654-6">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>ISBN 978-1-4244-2654-6</dc:identifier>
+                <dc:title>2008 Frontiers of Software Maintenance</dc:title>
+                <dc:identifier>DOI 10.1109/FOSM.2008.4659245</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Beijing, China</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>IEEE</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>De Lucia</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fasano</foaf:surname>
+                        <foaf:givenName>Fausto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oliveto</foaf:surname>
+                        <foaf:givenName>Rocco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_229"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:title>Traceability management for impact analysis</dc:title>
+        <dcterms:abstract>Software change impact analysis is the activity of the software maintenance process that determines possible effects of proposed software changes. This activity is necessary to be aware of ripple-effects caused by the change and record them so that nothing is overlooked. A change has not only impact on the source code, but also on the other related software artefacts, such as requirements, design, and test. For this reason, impact analysis can be efﬁciently supported through traceability information. In this paper we review traceability management in the context of impact analysis and discuss the main challenges and research directions.</dcterms:abstract>
+        <dc:date>2008</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/4659245/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:48:11</dcterms:dateSubmitted>
+        <bib:pages>21-30</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+               <dc:title>2008 Frontiers of Software Maintenance (FoSM)</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_229">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/229/De Lucia и др. - 2008 - Traceability management for impact analysis.pdf"/>
+        <dc:title>De Lucia и др. - 2008 - Traceability management for impact analysis.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://link.springer.com/10.1007/s11947-012-0958-7">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1935-5130,%201935-5149"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Costa</foaf:surname>
+                        <foaf:givenName>Corrado</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Antonucci</foaf:surname>
+                        <foaf:givenName>Francesca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pallottino</foaf:surname>
+                        <foaf:givenName>Federico</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aguzzi</foaf:surname>
+                        <foaf:givenName>Jacopo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sarriá</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menesatti</foaf:surname>
+                        <foaf:givenName>Paolo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_230"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:subject>programming</dc:subject>
+        <dc:title>A Review on Agri-food Supply Chain Traceability by Means of RFID Technology</dc:title>
+        <dc:date>2013</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/s11947-012-0958-7</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:48:14</dcterms:dateSubmitted>
+        <dc:rights>http://www.springer.com/tdm</dc:rights>
+        <bib:pages>353-366</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1935-5130,%201935-5149">
+        <prism:volume>6</prism:volume>
+        <dc:title>Food and Bioprocess Technology</dc:title>
+        <dc:identifier>DOI 10.1007/s11947-012-0958-7</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Food Bioprocess Technol</dcterms:alternative>
+        <dc:identifier>ISSN 1935-5130, 1935-5149</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_230">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/230/Costa и др. - 2013 - A Review on Agri-food Supply Chain Traceability by.pdf"/>
+        <dc:title>Costa и др. - 2013 - A Review on Agri-food Supply Chain Traceability by.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-0-7695-2425-2">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>ISBN 978-0-7695-2425-2</dc:identifier>
+                <dc:title>13th IEEE International Conference on Requirements Engineering (RE'05)</dc:title>
+                <dc:identifier>DOI 10.1109/RE.2005.78</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Paris, France</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>IEEE</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cleland-Huang</foaf:surname>
+                        <foaf:givenName>J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Settimi</foaf:surname>
+                        <foaf:givenName>R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Chuan Duan</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Xuchang Zou</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_231"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>automatics</dc:subject>
+        <dc:subject>tooling</dc:subject>
+        <dc:title>Utilizing supporting evidence to improve dynamic requirements traceability</dc:title>
+        <dcterms:abstract>Requirements traceability provides critical support throughout all phases of a software development project. However practice has repeatedly shown the difficulties involved in long-term maintenance of traditional traceability matrices. Dynamic retrieval methods minimize the need for creating and maintaining explicit links and can significantly reduce the effort required to perform a manual trace. Unfortunately they suffer from recall and precision problems. This paper introduces three strategies for incorporating supporting information into a probabilistic retrieval algorithm in order to improve the performance of dynamic requirements traceability. The strategies include hierarchical modeling, logical clustering of artifacts, and semiautomated pruning of the probabilistic network. Experimental results indicate that enhancement strategies can be used effectively to improve trace retrieval results thereby increasing the practicality of utilizing dynamic trace retrieval methods.</dcterms:abstract>
+        <dc:date>2005</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/1531035/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:48:17</dcterms:dateSubmitted>
+        <bib:pages>135-144</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>13th IEEE International Conference on Requirements Engineering (RE'05)</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_231">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/231/Cleland-Huang и др. - 2005 - Utilizing supporting evidence to improve dynamic r.pdf"/>
+        <dc:title>Cleland-Huang и др. - 2005 - Utilizing supporting evidence to improve dynamic r.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-5090-4121-3">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>7</prism:volume>
+                <dc:identifier>ISBN 978-1-5090-4121-3</dc:identifier>
+                <dc:title>2016 IEEE 24th International Requirements Engineering Conference (RE)</dc:title>
+                <dc:identifier>DOI 10.1109/RE.2016.17</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Beijing, China</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>IEEE</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wohlrab</foaf:surname>
+                        <foaf:givenName>Rebekka</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steghofer</foaf:surname>
+                        <foaf:givenName>Jan-Philipp</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Knauss</foaf:surname>
+                        <foaf:givenName>Eric</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maro</foaf:surname>
+                        <foaf:givenName>Salome</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Anjorin</foaf:surname>
+                        <foaf:givenName>Anthony</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_236"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:subject>engineering</dc:subject>
+        <dc:title>Collaborative Traceability Management: Challenges and Opportunities</dc:title>
+        <dcterms:abstract>Traceability and trace link management are important for various reasons, including managing knowledge about a complex software system, monitoring the progress of its development, and proving that it is developed in accordance to regulations. However, it is difﬁcult to maintain and use trace links in real-world projects where artifacts undergo constant change and multiple stakeholders are involved. In this paper, we extend the current body of knowledge on traceability management by regarding its collaborative aspects in an industrial setting. Based on 15 industrial cases and semi-structured interviews with 24 practitioners, we identify challenges involved in collaborative traceability management, and how traceability management can be used to enable collaboration. Our ﬁndings show that main challenges are boundaries between organizations and tools, a lack of common goals and responsibilities, and the difﬁculty of collaboratively maintaining trace links. We also identify traceability as an important facilitator for communication and knowledge management across these boundaries.</dcterms:abstract>
+        <dc:date>2016</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Collaborative Traceability Management</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/7765527/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:50:53</dcterms:dateSubmitted>
+        <bib:pages>216-225</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>2016 IEEE 24th International Requirements Engineering Conference (RE)</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_236">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/236/Wohlrab и др. - 2016 - Collaborative Traceability Management Challenges .pdf"/>
+        <dc:title>Wohlrab и др. - 2016 - Collaborative Traceability Management Challenges .pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.emerald.com/bfj/article/104/1/7-19/64461">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>104</prism:volume>
+                <dc:title>British Food Journal</dc:title>
+                <dc:identifier>DOI 10.1108/00070700210418703</dc:identifier>
+                <prism:number>1</prism:number>
+                <dc:identifier>ISSN 0007-070X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mousavi</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sarhadi</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lenk</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fawcett</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_237"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>management</dc:subject>
+        <dc:subject>tooling</dc:subject>
+        <dc:title>Tracking and traceability in the meat processing industry: a solution</dc:title>
+        <dcterms:abstract>The meat industry is seeking to establish reassurance on traceability and production techniques that may help to promote confidence in the integrity and origin of their products. This paper reviews research and development activities for traceability and trackability in the meat industry. Achievements of individuals and research groups developing tools and techniques to improve the production process in handling and cutting meat portions for end users are discussed. In addition software/hardware, logistics and technical requirements for tracking material in a production process are introduced. With the aid of such established tools and techniques coupled with novel proposals, the authors offer a practical solution for the development of a tracking and traceability system within the meat industry. The proposed prototype system is capable of identifying and handling a product and the information attached to it throughout the production process to retail packs.</dcterms:abstract>
+        <dc:date>2002</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Tracking and traceability in the meat processing industry</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.emerald.com/bfj/article/104/1/7-19/64461</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-09 12:50:55</dcterms:dateSubmitted>
+        <dc:rights>https://www.emerald.com/insight/site-policies</dc:rights>
+        <bib:pages>7-19</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_237">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/237/Mousavi и др. - 2002 - Tracking and traceability in the meat processing i.pdf"/>
+        <dc:title>Mousavi и др. - 2002 - Tracking and traceability in the meat processing i.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Book rdf:about="urn:isbn:978-1-4471-2238-8%20978-1-4471-2239-5">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>London</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer London</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cleland-Huang</foaf:surname>
+                        <foaf:givenName>Jane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gotel</foaf:surname>
+                        <foaf:givenName>Orlena</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zisman</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <link:link rdf:resource="#item_266"/>
+        <dc:subject>traceability</dc:subject>
+        <dc:subject>software</dc:subject>
+        <dc:subject>engineering</dc:subject>
+        <dc:subject>programming</dc:subject>
+        <dc:subject>network</dc:subject>
+        <dc:title>Software and Systems Traceability</dc:title>
+        <dc:date>2012</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/10.1007/978-1-4471-2239-5</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-23 13:49:03</dcterms:dateSubmitted>
+        <dc:rights>https://www.springernature.com/gp/researchers/text-and-data-mining</dc:rights>
+        <dc:description>DOI: 10.1007/978-1-4471-2239-5</dc:description>
+        <prism:volume>14</prism:volume>
+        <dc:identifier>ISBN 978-1-4471-2238-8 978-1-4471-2239-5</dc:identifier>
+        <z:numPages>1-495</z:numPages>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_266">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/266/Cleland-Huang и др. - 2012 - Software and Systems Traceability.pdf"/>
+        <dc:title>Cleland-Huang и др. - 2012 - Software and Systems Traceability.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>
