@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traceability in Industry 4.0</title>
+    <style>
+        /* Theme Variables */
+        :root {
+            --font-family-display: Arial, sans-serif;
+            --font-weight-display: 600;
+            --font-family-content: Arial, sans-serif;
+            --font-weight-content: 400;
+            --font-size-content: 16px;
+            --line-height-content: 1.4;
+        }
+
+        /* DARK THEME */
+        body.theme-dark {
+            --color-bg-base: #0f172a;
+            --color-bg-elevated: #020617;
+            --color-bg-surface: #1e293b;
+            --color-bg-muted: #334155;
+            --color-text-primary: #f1f5f9;
+            --color-text-secondary: #cbd5e1;
+            --color-text-muted: #94a3b8;
+            --color-text-accent: #38bdf8;
+            --color-primary: #38bdf8;
+            --color-primary-foreground: #0f172a;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-content);
+            font-weight: var(--font-weight-content);
+            font-size: var(--font-size-content);
+            line-height: var(--line-height-content);
+            overflow-x: hidden;
+        }
+
+        /* Slide Container */
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Layout Utilities */
+        .row { flex-direction: row; }
+        .col { flex-direction: column; }
+        .center {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .space-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+        .items-start { align-items: flex-start; }
+        .fill-width { flex: 1; }
+        .fill-height { flex: 1; display: flex; flex-direction: column; }
+
+        /* Spacing */
+        .gap-sm { gap: 0.5rem; }
+        .gap-md { gap: 1rem; }
+        .gap-lg { gap: 1.5rem; }
+        .gap-xl { gap: 2rem; }
+
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .p-12 { padding: 3rem; }
+        .p-16 { padding: 4rem; }
+
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-6 { margin-top: 1.5rem; }
+        .mt-8 { margin-top: 2rem; }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-display);
+            font-weight: var(--font-weight-display);
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.25rem; }
+        h3 { font-size: 1.75rem; }
+        h4 { font-size: 1.5rem; }
+
+        .text-6xl { font-size: 3.75rem; }
+        .text-4xl { font-size: 2.25rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-sm { font-size: 0.875rem; }
+
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .text-center { text-align: center; }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            line-height: 1.8;
+        }
+
+        ul li { list-style: disc; }
+        li { margin-bottom: 0.75rem; }
+
+        /* Card Styles */
+        .card-rect {
+            padding: 2rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <!-- SLIDE 1: Title Slide -->
+    <section class="slide p-16 col center" style="background-color: #ffffff; color: #0f172a;">
+        <h1 class="text-6xl mb-2" style="color: #0284c7;">Traceability in Industry 4.0</h1>
+        <h2 class="text-2xl mb-6" style="color: #475569;">Intelligent Systems for Supply Chain Management</h2>
+        <p class="text-sm mt-8" style="color: #64748b;">Bougdira, Akharraz, Ahaitouf (2020)</p>
+        <p class="text-xs mt-2" style="color: #94a3b8;">Journal of Ambient Intelligence and Humanized Computing, Vol. 11, 2020</p>
+    </section>
+
+    <!-- SLIDE 2: Agenda/Outline -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-6" style="color: #0284c7;">Presentation Outline</h2>
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <ul class="text-lg" style="color: #475569; line-height: 2;">
+                <li>Problem and Goal</li>
+                <li>Core Idea</li>
+                <li>System Architecture</li>
+                <li>Implementation Details</li>
+                <li>Key Results</li>
+                <li>Key Challenge & Solution</li>
+                <li>Conclusion</li>
+            </ul>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 2</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: Problem and Goal -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">Problem and Goal</h2>
+        <p class="text-lg mb-4" style="color: #475569; font-weight: 500;">Why is intelligent traceability needed?</p>
+        <ul class="text-lg" style="color: #475569;">
+            <li>Industry 4.0 generates massive heterogeneous data (IoT, sensors, CPS)</li>
+            <li>Supply chains lack real-time transparency and safety assurance</li>
+            <li>Current systems cannot integrate data from multiple sources</li>
+            <li>Goal: Create unified, intelligent traceability for product safety</li>
+        </ul>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 3</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: Core Idea (Main Concept) -->
+    <section class="slide p-16 col center" style="background-color: #f1f5f9; color: #0f172a;">
+        <h2 class="mb-6" style="color: #0284c7;">Core Idea: Three-Layer Architecture</h2>
+        <div class="row gap-lg" style="width: 100%; flex: 1; align-items: center;">
+            <div style="background-color: #ffffff; color: #0f172a; padding: 1.5rem; flex: 1; border: 2px solid #0284c7; border-radius: 0;">
+                <h4 style="color: #0284c7; margin-bottom: 0.8rem; font-size: 1rem;">Layer 1</h4>
+                <p style="color: #475569; font-size: 0.95rem;"><strong>Semantic</strong><br>Ontology-based knowledge representation</p>
+            </div>
+            <div style="background-color: #ffffff; color: #0f172a; padding: 1.5rem; flex: 1; border: 2px solid #0284c7; border-radius: 0;">
+                <h4 style="color: #0284c7; margin-bottom: 0.8rem; font-size: 1rem;">Layer 2</h4>
+                <p style="color: #475569; font-size: 0.95rem;"><strong>Integration</strong><br>Unified data aggregation from heterogeneous sources</p>
+            </div>
+            <div style="background-color: #ffffff; color: #0f172a; padding: 1.5rem; flex: 1; border: 2px solid #0284c7; border-radius: 0;">
+                <h4 style="color: #0284c7; margin-bottom: 0.8rem; font-size: 1rem;">Layer 3</h4>
+                <p style="color: #475569; font-size: 0.95rem;"><strong>Cloud</strong><br>Remote access and query capabilities</p>
+            </div>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 4</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 5: System Architecture - Ontology -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">System Architecture: Ontology-Based Modeling</h2>
+        <ul class="text-lg" style="color: #475569;">
+            <li>Semantic representation of traceability domain</li>
+            <li>Classes: Product, Process, Location, Timestamp, Quality</li>
+            <li>Relations: hasStage, hasQuality, hasLocation</li>
+        </ul>
+        <p class="text-sm mt-4 mb-3" style="color: #64748b;">Let O = {C, R, I} where:</p>
+        <div style="background-color: #f1f5f9; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #0284c7;">
+            <p style="color: #0f172a; margin: 0; font-size: 0.95rem;">C = Concepts (Product, Process, Quality, Location, Agent)</p>
+            <p style="color: #0f172a; margin: 0.5rem 0 0 0; font-size: 0.95rem;">R = Relations (hasStage, hasQuality, hasTrace)</p>
+            <p style="color: #0f172a; margin: 0.5rem 0 0 0; font-size: 0.95rem;">I = Instances (specific products, timestamps)</p>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 5</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 6: Data Integration Mechanism -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">Data Integration: IoT Data Processing</h2>
+        <p class="text-lg mb-3" style="color: #475569; font-weight: 500;">Processing Pipeline:</p>
+        <ul class="text-lg" style="color: #475569;">
+            <li>Collection: Real-time data from sensors, smart devices</li>
+            <li>Normalization: Map heterogeneous formats to ontology</li>
+            <li>Aggregation: Merge data into unified knowledge base</li>
+        </ul>
+        <p class="text-sm mt-4 mb-2" style="color: #64748b;">Data transformation formula:</p>
+        <div style="background-color: #f1f5f9; padding: 1rem; margin: 0.5rem 0;">
+            <p style="color: #0f172a; margin: 0; font-size: 0.9rem; font-family: 'Courier New', monospace;">D_transformed = f(D_raw, O) = Map(D_raw) → O_concepts</p>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 6</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 7: Cloud Platform Implementation -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">Implementation: Cloud-Based Platform</h2>
+        <ul class="text-lg" style="color: #475569;">
+            <li>Common knowledge base accessible to all stakeholders</li>
+            <li>Query interface for trace retrieval and tracking</li>
+            <li>Real-time synchronization across supply chain</li>
+            <li>Access control and data privacy mechanisms</li>
+        </ul>
+        <p class="text-sm mt-4 mb-2" style="color: #64748b;">Interoperability function:</p>
+        <div style="background-color: #f1f5f9; padding: 1rem; margin: 0.5rem 0;">
+            <p style="color: #0f172a; margin: 0; font-size: 0.9rem; font-family: 'Courier New', monospace;">I(S₁, S₂) = similarity(schema₁, schema₂, O_mapping)</p>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 7</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: Key Results -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">Key Results: System Capabilities</h2>
+        <div class="row gap-lg" style="width: 100%; flex: 1;">
+            <div style="flex: 1; padding: 1rem; background-color: #f1f5f9;">
+                <h4 style="color: #0284c7; margin-bottom: 0.8rem;">Achieved Outcomes</h4>
+                <ul style="color: #475569; margin-left: 1.5rem; font-size: 0.95rem;">
+                    <li>Solved interoperability challenges</li>
+                    <li>Automated data integration</li>
+                    <li>Enhanced transparency</li>
+                </ul>
+            </div>
+            <div style="flex: 1; padding: 1rem; background-color: #f1f5f9;">
+                <h4 style="color: #0284c7; margin-bottom: 0.8rem;">Practical Benefits</h4>
+                <ul style="color: #475569; margin-left: 1.5rem; font-size: 0.95rem;">
+                    <li>Real-time product tracking</li>
+                    <li>Quality assurance automation</li>
+                    <li>Compliance monitoring</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 8</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 9: Key Challenge & Solution -->
+    <section class="slide p-16 col" style="background-color: #f1f5f9; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">Key Challenge & Solution</h2>
+        <p class="text-lg mb-2" style="color: #475569; font-weight: 600;">Challenge: Data Heterogeneity</p>
+        <p class="text-lg mb-4" style="color: #475569;">Multiple source formats (JSON, XML, sensor streams)</p>
+        <p class="text-lg mb-2" style="color: #475569; font-weight: 600;">Solution: Semantic Mapping</p>
+        <ul class="text-lg" style="color: #475569;">
+            <li>Ontology defines unified semantic model</li>
+            <li>Transformation rules map source schemas to ontology</li>
+            <li>Enables interoperable data exchange</li>
+        </ul>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 10: Conclusion -->
+    <section class="slide p-16 col" style="background-color: #ffffff; color: #0f172a;">
+        <h2 class="mb-4" style="color: #0284c7;">Conclusion</h2>
+        <ul class="text-lg" style="color: #475569;">
+            <li>Industry 4.0 requires intelligent, semantically-grounded traceability</li>
+            <li>Ontology-based architecture enables interoperability</li>
+            <li>Cloud platform provides scalable, accessible solution</li>
+            <li>Addresses critical need for supply chain transparency and safety</li>
+        </ul>
+        <p class="text-lg mt-4" style="color: #0284c7; font-weight: 600;">Future: Integration with blockchain for immutable tracking</p>
+        <div style="text-align: right; font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            <span style="margin-right: 2rem;">Slide 10</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 11: Thank You -->
+    <section class="slide p-16 col center" style="background-color: #0284c7; color: #ffffff;">
+        <h2 class="text-5xl mb-4" style="color: #ffffff;">Thank You</h2>
+        <p class="text-2xl mb-6" style="color: #ffffff;">Questions & Discussion</p>
+        <p class="text-sm" style="color: #ffffff;">Bougdira, Akharraz, Ahaitouf (2020)<br>Journal of Ambient Intelligence and Humanized Computing</p>
+    </section>
+
+</body>
+</html>
