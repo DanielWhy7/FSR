@@ -1,0 +1,206 @@
+\documentclass[11pt]{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[page number]
+
+\title{Introduction to Traceability in Industry 4.0}
+\subtitle{Intelligent Systems for Supply Chain Management}
+\author{Bikmetov Daniel \and Krupenskiy Roman \\ 6114-100503D}
+\date{Samara, 2025}
+\institute{Samara State Aerospace University}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\begin{document}
+
+% Title Slide
+\frame{\titlepage}
+
+% Outline Slide
+\begin{frame}
+  \frametitle{Presentation Outline}
+  \begin{itemize}
+    \item Problem and Goal
+    \item Core Idea: Three-Layer Architecture
+    \item System Architecture: Ontology-Based Modeling
+    \item Data Integration: IoT Data Processing
+    \item Implementation: Cloud-Based Platform
+    \item Key Results: System Capabilities
+    \item Key Challenge \& Solution
+    \item Conclusion
+  \end{itemize}
+\end{frame}
+
+% Slide 3: Problem and Goal
+\begin{frame}
+  \frametitle{Problem and Goal}
+  
+  \textbf{Why is intelligent traceability needed?}
+  
+  \begin{itemize}
+    \item Industry 4.0 generates massive heterogeneous data (IoT, sensors, CPS)
+    \item Supply chains lack real-time transparency and safety assurance
+    \item Current systems cannot integrate data from multiple sources
+    \item \textbf{Goal:} Create unified, intelligent traceability for product safety
+  \end{itemize}
+\end{frame}
+
+% Slide 4: Core Idea
+\begin{frame}
+  \frametitle{Core Idea: Three-Layer Architecture}
+  
+  \begin{center}
+    \begin{tabular}{|c|}
+      \hline
+      \textbf{Layer 1 -- Semantic} \\
+      Ontology-based knowledge representation \\
+      \hline
+      \textbf{Layer 2 -- Integration} \\
+      Unified data aggregation from heterogeneous sources \\
+      \hline
+      \textbf{Layer 3 -- Cloud} \\
+      Remote access and query capabilities \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% Slide 5: Ontology-Based Modeling
+\begin{frame}
+  \frametitle{System Architecture: Ontology-Based Modeling}
+  
+  Semantic representation of traceability domain
+  
+  \textbf{Classes:} Product, Process, Location, Timestamp, Quality
+  
+  \textbf{Relations:} hasStage, hasQuality, hasLocation
+  
+  \vspace{0.5cm}
+  
+  Let $O = \{C, R, I\}$ where:
+  \begin{itemize}
+    \item $C$ = Concepts (Product, Process, Quality, Location, Agent)
+    \item $R$ = Relations (hasStage, hasQuality, hasTrace)
+    \item $I$ = Instances (specific products, timestamps)
+  \end{itemize}
+\end{frame}
+
+% Slide 6: Comparison Table
+\begin{frame}[fragile]
+  \frametitle{System Architecture: Traditional vs. Proposed}
+  
+  \tiny
+  \begin{center}
+    \begin{tabular}{|l|c|c|}
+      \hline
+      \textbf{Aspect} & \textbf{Traditional} & \textbf{Proposed} \\
+      \hline
+      Data Integration & Manual, error-prone & Automated, ontology-driven \\
+      Interoperability & Limited, siloed systems & Full semantic interoperability \\
+      Real-time Access & Delayed reports (batch) & Real-time visibility \\
+      Quality Assurance & Batch processing & Continuous monitoring \\
+      Compliance & Document-based tracking & Automated tracking \\
+      Scalability & Fixed capacity infrastructure & Cloud elastic scaling \\
+      Error Detection & Post-incident (reactive) & Real-time (proactive) \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% Slide 7: Data Integration
+\begin{frame}
+  \frametitle{Data Integration: IoT Data Processing}
+  
+  \textbf{Processing Pipeline}
+  
+  \begin{itemize}
+    \item \textbf{Collection:} Real-time data from sensors, smart devices
+    \item \textbf{Normalization:} Map heterogeneous formats to ontology
+    \item \textbf{Aggregation:} Merge data into unified knowledge base
+  \end{itemize}
+  
+  \vspace{0.5cm}
+  \textbf{Data Transformation Formula}
+  
+  \[D_{\text{transformed}} = f(D_{\text{raw}}, O) = \text{Map}(D_{\text{raw}}) \rightarrow O_{\text{concepts}}\]
+\end{frame}
+
+% Slide 8: Cloud Implementation
+\begin{frame}
+  \frametitle{Implementation: Cloud-Based Platform}
+  
+  \begin{itemize}
+    \item Common knowledge base accessible to all stakeholders
+    \item Query interface for trace retrieval and tracking
+    \item Real-time synchronization across supply chain
+    \item Access control and data privacy mechanisms
+  \end{itemize}
+  
+  \vspace{0.5cm}
+  \textbf{Interoperability Function}
+  
+  \[I(S_1, S_2) = \text{similarity}(\text{schema}_1, \text{schema}_2, O_{\text{mapping}})\]
+\end{frame}
+
+% Slide 9: Key Results
+\begin{frame}
+  \frametitle{Key Results: System Capabilities}
+  
+  \textbf{Achieved Outcomes}
+  \begin{itemize}
+    \item Solved interoperability challenges
+    \item Automated data integration
+    \item Enhanced transparency
+  \end{itemize}
+  
+  \vspace{0.5cm}
+  
+  \textbf{Practical Benefits}
+  \begin{itemize}
+    \item Real-time product tracking
+    \item Quality assurance automation
+    \item Compliance monitoring
+  \end{itemize}
+\end{frame}
+
+% Slide 10: Challenge and Solution
+\begin{frame}
+  \frametitle{Key Challenge \& Solution}
+  
+  \textbf{Challenge: Data Heterogeneity}
+  \begin{itemize}
+    \item Multiple source formats (JSON, XML, sensor streams)
+  \end{itemize}
+  
+  \vspace{0.5cm}
+  
+  \textbf{Solution: Semantic Mapping}
+  \begin{itemize}
+    \item Ontology defines unified semantic model
+    \item Transformation rules map source schemas to ontology
+    \item Enables interoperable data exchange
+  \end{itemize}
+\end{frame}
+
+% Slide 11: Conclusion
+\begin{frame}
+  \frametitle{Thank You!}
+  
+  \centering
+  \Large
+  
+  Any questions?
+  
+  \vspace{1cm}
+  
+  \normalsize
+  \textbf{Contact:} bicmetovdaniel@gmail.com
+\end{frame}
+
+\end{document}
