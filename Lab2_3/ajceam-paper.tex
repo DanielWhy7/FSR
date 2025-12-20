@@ -1,183 +1,130 @@
-\documentclass[eng,russian]{ajceam-class}
+\documentclass[fleqn,10pt,russian]{olplainarticle-class}
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
-\usepackage{cite}
 \usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{array}
-\usepackage{graphicx}
 \usepackage[font=small,labelfont=bf,skip=3pt]{caption}
 \usepackage{enumitem}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
 \nocite{*}
 
-% Publication Title
-\title{Economic Analysis of RFID-based Traceability for Perishable Products}
-\titulo{Экономический анализ RFID-трассируемости в цепях поставок скоропортящихся продуктов}
-\shorttitle{RFID Traceability Economics}
+\title{Economic analysis of RFID-based traceability for perishable products}
 
-% Authors
 \author[1]{Daniel Bicmetov}
 \author[2]{Roman Krupensky}
 \affil[1]{Samara National Research University, Samara, Russia}
-\firstauthor{Bicmetov and Krupensky}
-\contactauthor{Daniel Bicmetov}
-\email{bicmetovdaniel@gmail.com}
-
-% Publication data
-\thisvolume{XX}
-\thisnumber{XX}
-\thismonth{December}
-\thisyear{2025}
-\receptiondate{20/12/2025}
-\acceptancedate{20/12/2025}
-\publicationdate{20/12/2025}
-
-\abstract{%
-This paper analyzes RFID-based traceability systems for perishable products using stochastic modeling. Economic Traceability Lot ($n^*\approx250$) maximizes profit compared to no-traceability scenarios with improvements up to 1005.6\%. Cost-benefit analysis and numerical results validate practical applicability.
-}
 
 \keywords{RFID, traceability, supply chain, perishable products, Economic Traceability Lot}
 
-\resumo{%
-Анализ RFID-трассировки скоропортящихся продуктов. Economic Traceability Lot ($n^*\approx250$) максимизирует прибыль на 1005.6\% по сравнению с отсутствием трассировки. Cost-benefit анализ и численные результаты подтверждают практичность.
-}
-
-\palavraschave{RFID, трассируемость, цепь поставок, скоропортящиеся продукты, Economic Traceability Lot}
+\begin{abstract}
+The paper studies an RFID-based traceability system for perishable products in a supply chain composed of a producer and a retailer. It focuses on the impact of traceability granularity on costs, revenue and total profit. Using a stochastic model of batch acceptance and cost terms for transport, disposal, tags and salvage value, the existence of an Economic Traceability Lot is shown, i.e. an optimal batch size which maximizes expected profit in presence of traceability compared to a no-traceability scenario. Numerical results confirm peak performance at $n^*\approx250$ units.
+\end{abstract}
 
 \begin{document}
+
+\flushbottom
 \maketitle
-\thispagestyle{fancy}
-\printcontactdata
+\thispagestyle{empty}
 
-\tableofcontents
-\newpage
-
-\section{Introduction}
+\section*{Introduction}
 
 Оптимизация логистики скоропортящихся продуктов критически важна из-за требований безопасности \cite{Alarcos1999}. Трассируемость по ISO 9001:2000 локализует дефектные партии \cite{ArslanHansen1996}.
 
 \begin{itemize}
-\item Практическая реализация: сквозной обмен данными
-\item Экономическая мотивация: укрепление репутации \cite{WangEtAl2015}
-\item Технические вызовы: затраты внедрения \cite{BartkovaJouvet1999}
+\item Практическая реализация: сквозной обмен данными участников цепочки
+\item Экономическая мотивация: укрепление репутации бренда \cite{WangEtAl2015}
+\item Технические вызовы: высокие затраты внедрения \cite{BartkovaJouvet1999}
 \end{itemize}
 
-\section{Cost Structure}
+\section*{The costs related to traceability systems}
 
-Затраты включают персонал, оборудование, обучение и RFID-метки \cite{BartkovaJouvet1999}.
+Затраты включают пять категорий \cite{BartkovaJouvet1999}:
 
 \begin{enumerate}
 \item Персонал: время сотрудников
-\item Оборудование: сканеры, ПО
+\item Оборудование: RFID-сканеры, ПО
 \item Обучение персонала
-\item Консультанты
+\item Консультанты: проектирование
 \item Расходники: RFID-метки
 \end{enumerate}
 
-Меньший размер партии повышает точность локализации \cite{Mitchell2001}.
+Меньший размер партии повышает точность, но увеличивает затраты \cite{Mitchell2001}.
 
-\subsection{Cost-Benefit Analysis}
+\subsection*{Cost-Benefit Analysis}
 
-Полезность трассировки:
+Полезность трассировки определяется коэффициентом:
+
 \begin{equation}
-\text{CBR}(n) = \frac{(1-G(n))C_{\text{recall}}}{C_{\text{tag}}G(n)^{-1}+C_{\text{infra}}}
+\text{CBR}(n)=\frac{(1-G(n))C_{\text{recall}}}{C_{\text{tag}}G(n)^{-1}+C_{\text{infra}}}
 \label{eq:cbr}
 \end{equation}
 
-где $\text{CBR}(n)$ -- показатель экономической эффективности трассируемости, 
-$G(n)=P/n$ -- гранулярность (размер партии), 
-$C_{\text{recall}}$ -- затраты на отзыв продукции, 
+где $\text{CBR}(n)$ -- коэффициент «затраты–выгода» трассируемости, 
+$G(n)=P/n$ -- гранулярность партии, 
+$C_{\text{recall}}$ -- затраты на отзыв дефектной продукции, 
 $C_{\text{tag}}$ -- стоимость RFID-метки, 
-$C_{\text{infra}}$ -- инфраструктурные затраты.
+$C_{\text{infra}}$ -- постоянные инфраструктурные расходы системы трассировки.
 
-\section{RFID Technology}
+\section*{RFID technology for traceability systems}
 
 RFID-метки классифицируются по энергоснабжению \cite{BartkovaJouvet1999}:
 
-\begin{table}[H]
+\begin{table}[h]
 \centering
 \caption{RFID Comparison}
 \begin{tabular}{|l|c|c|}
 \hline
 Тип & Радиус & Датчики \\
 \hline
-Пассивная & 1-2м & Нет \\
-Полупассивная & 5-10м & Темп. \\
-Активная & 10-100м & Полный \\
+Пассивная & 1-2 м & Нет \\
+Полупассивная & 5-10 м & Темп. \\
+Активная & 10-100 м & Полный \\
 \hline
 \end{tabular}
 \label{tab:rfid}
 \end{table}
 
-\section{Supply Chain Model}
+\section*{Supply chain approach and model}
 
-Модель: производитель-ритейлер. Гранулярность:
+Модель включает производителя и ритейлера с продукцией $P$, долей брака $p$, партиями $n$:
+
 \begin{equation}
 G(n)=\frac{P}{n}
 \label{eq:granularity}
 \end{equation}
 
-где $G(n)=P/n$ -- гранулярность, $P$ -- объём, $n$ -- партия.
+где $G(n)=P/n$ -- гранулярность, $P$ -- общий объём, $n$ -- размер партии.
 
-\begin{figure}[htbp]
-\centering
-\scalebox{0.75}{ % Scale down to fit perfectly
-\begin{tikzpicture}[
-    box/.style={rectangle, draw, rounded corners, minimum height=1em, minimum width=2.8em, align=center, fill=blue!15, font=\footnotesize},
-    arrow/.style={-Stealth, thick},
-    node distance=2.2cm and 1.3cm
-]
+Приёмочный тест с порогом $th$: если $\hat{p}>th$, партия на salvage-рынок \cite{Indura2010}.
 
-% Nodes (smaller and tighter)
-\node[box] (producer) {Производитель\\(RFID)};
-\node[right=of producer] [box] (warehouse) {Склад\\(сканер)};
-\node[right=of warehouse] [box] (retailer) {Ритейлер\\(проверка)};
-\node[right=of retailer] [box] (consumer) {Потребитель};
+\subsection*{Economic Traceability Lot formulation}
 
-% Main flow arrows
-\draw[arrow] (producer) -- (warehouse);
-\draw[arrow] (warehouse) -- (retailer);
-\draw[arrow] (retailer) -- (consumer);
+Параметры: $C_d$, $C_{tr}$, $C_{tag}$, $S_v$, $P_r$ \cite{NACA460}. Прибыль:
 
-% Traceability feedback (simplified paths)
-\draw[arrow, red, dashed, thick] (consumer.west) to[bend right=20] node[above, font=\tiny, sloped] {отзыв} (producer.west);
-\draw[arrow, green!70!black, dashed, thick] (retailer.north) |- ++(0.8,0.6) |- (warehouse.north);
-
-% Compact labels
-\node[above=0.2cm of producer.north, font=\tiny\bfseries] {Трассировка};
-\node[below=0.15cm of consumer.south, font=\tiny] {Продукт};
-
-\end{tikzpicture}
-}
-\caption{Схема RFID-трассировки в цепочке поставок скоропортящихся продуктов}
-\label{fig:traceability}
-\end{figure}
-
-Приёмочный контроль с порогом.
-
-\subsection{Economic Traceability Lot}
-
-Прибыль:
 \begin{equation}
-\pi(n)=P_r(1-p)n\operatorname{Pr}(\hat{p}\leq th)-C_{tr}\frac{P}{n}
+\pi(n)=P_r(1-p)n-C_{tr}-C_d pn-C_{\text{tag}}\frac{P}{n}-S_v R
 \label{eq:profit}
 \end{equation}
 
 где $\pi(n)$ -- прибыль при размере партии $n$, 
-$P_r$ -- цена реализации, 
+$P_r$ -- цена реализации продукции, 
 $p$ -- вероятность дефекта, 
-$\operatorname{Pr}(\hat{p}\leq th)$ -- вероятность прохождения контроля качества, 
 $C_{tr}$ -- затраты на трассировку, 
-$P$ -- общий объём продукции. 
+$C_d$ -- стоимость утилизации дефектных единиц, 
+$C_{\text{tag}}$ -- стоимость RFID-меток, 
+$P$ -- общий объём партии, 
+$S_v$ -- затраты на возврат/сервис, 
+$R$ -- объём отклонённых партий. 
 
 Оптимум: $n^*=\arg\max_n[\pi(n)]$.
 
-\section{Numerical Results}
+\section*{Numerical analysis and discussion}
 
-\begin{table}[H]
+Численный анализ показывает максимум прибыли при $n^*\approx250$:
+
+\begin{table}[h]
 \centering
 \caption{Batch Testing ($p=5\%$, $th=10\%$)}
 \begin{tabular}{|l|c|c|}
@@ -192,9 +139,9 @@ $n$ & Accept & Defects \\
 \label{tab:batches}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[h]
 \centering
-\caption{Profit ($P=10{,}000$)}
+\caption{Profit Analysis ($P=10{,}000$)}
 \begin{tabular}{|l|c|c|}
 \hline
 $n$ & Profit & vs No-Trace \\
@@ -207,13 +154,11 @@ $n$ & Profit & vs No-Trace \\
 \label{tab:profit}
 \end{table}
 
-Максимум при $n^*\approx250$ -- Economic Traceability Lot.
+\section*{Conclusions}
 
-\section{Conclusions}
+RFID-трассируемость повышает безопасность и прибыль при оптимальной гранулярности. Economic Traceability Lot ($n^*\approx250$) балансирует затраты и риски \cite{BartkovaJouvet1999}.
 
-RFID-трассируемость повышает прибыль при оптимальной гранулярности. ETL ($n^*\approx250$) балансирует затраты и риски \cite{BartkovaJouvet1999}.
-
-\bibliographystyle{IEEETran}
+\nocite{*}
 \bibliography{References}
 
 \end{document}
