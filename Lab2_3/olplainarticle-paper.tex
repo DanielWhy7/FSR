@@ -1,10 +1,9 @@
 \documentclass[fleqn,10pt,russian]{olplainarticle-class}
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
-\usepackage{cite}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\nocite{*}
+\usepackage{hyperref}
 
 \title{Economic analysis of RFID-based traceability for perishable products}
 
@@ -64,7 +63,7 @@ The paper studies an RFID-based traceability system for perishable products in a
 \label{eq:profit}
 \end{equation}
 
-На основе этих величин формируются выражения для ожидаемых совокупных затрат и ожидаемой выручки в сценарии с трассируемостью, а поиск максимума по $n$ позволяет определить Economic Traceability Lot. Соответствующие формулы показаны в уравнении~\eqref{eq:profit} \cite{NACA460}.
+На основе этих величин формируются выражения для ожидаемых совокупных затрат и ожидаемой выручки в сценарии с трассируемостью (см. уравнение~\eqref{eq:profit}), а поиск максимума по $n$ позволяет определить Economic Traceability Lot \cite{NACA460}.
 
 \section*{Numerical analysis and discussion}
 
@@ -74,7 +73,8 @@ The paper studies an RFID-based traceability system for perishable products in a
 
 Представленная модель демонстрирует, что RFID\mbox{-}трассируемость скоропортящихся продуктов может одновременно повышать безопасность пищи и улучшать экономическую эффективность цепи поставок при корректном выборе уровня гранулярности \cite{BartkovaJouvet1999}. Наличие Economic Traceability Lot позволяет обосновать выбор размера партии с учётом реальных затрат и требований регулирующих органов \cite{NACA460}.
 
-\bibliographystyle{IEEETran}
+\nocite{*}
+
 \bibliography{References}
 
 \end{document}
