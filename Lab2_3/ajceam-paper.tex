@@ -9,6 +9,8 @@
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf,skip=3pt]{caption}
 \usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
 \nocite{*}
 
 % Publication Title
@@ -119,6 +121,40 @@ G(n)=\frac{P}{n}
 \end{equation}
 
 где $G(n)=P/n$ -- гранулярность, $P$ -- объём, $n$ -- партия.
+
+\begin{figure}[htbp]
+\centering
+\scalebox{0.75}{ % Scale down to fit perfectly
+\begin{tikzpicture}[
+    box/.style={rectangle, draw, rounded corners, minimum height=1em, minimum width=2.8em, align=center, fill=blue!15, font=\footnotesize},
+    arrow/.style={-Stealth, thick},
+    node distance=2.2cm and 1.3cm
+]
+
+% Nodes (smaller and tighter)
+\node[box] (producer) {Производитель\\(RFID)};
+\node[right=of producer] [box] (warehouse) {Склад\\(сканер)};
+\node[right=of warehouse] [box] (retailer) {Ритейлер\\(проверка)};
+\node[right=of retailer] [box] (consumer) {Потребитель};
+
+% Main flow arrows
+\draw[arrow] (producer) -- (warehouse);
+\draw[arrow] (warehouse) -- (retailer);
+\draw[arrow] (retailer) -- (consumer);
+
+% Traceability feedback (simplified paths)
+\draw[arrow, red, dashed, thick] (consumer.west) to[bend right=20] node[above, font=\tiny, sloped] {отзыв} (producer.west);
+\draw[arrow, green!70!black, dashed, thick] (retailer.north) |- ++(0.8,0.6) |- (warehouse.north);
+
+% Compact labels
+\node[above=0.2cm of producer.north, font=\tiny\bfseries] {Трассировка};
+\node[below=0.15cm of consumer.south, font=\tiny] {Продукт};
+
+\end{tikzpicture}
+}
+\caption{Схема RFID-трассировки в цепочке поставок скоропортящихся продуктов}
+\label{fig:traceability}
+\end{figure}
 
 Приёмочный контроль с порогом.
 
