@@ -61,7 +61,11 @@ The paper studies an RFID-based traceability system for perishable products in a
 \label{eq:cbr}
 \end{equation}
 
-где $G(n)=P/n$ -- гранулярность, $P$ -- общий объём, $n$ -- размер партии.
+где $\text{CBR}(n)$ -- коэффициент «затраты–выгода» трассируемости, 
+$G(n)=P/n$ -- гранулярность партии, 
+$C_{\text{recall}}$ -- затраты на отзыв дефектной продукции, 
+$C_{\text{tag}}$ -- стоимость RFID-метки, 
+$C_{\text{infra}}$ -- постоянные инфраструктурные расходы системы трассировки.
 
 \section*{RFID technology for traceability systems}
 
@@ -91,6 +95,8 @@ G(n)=\frac{P}{n}
 \label{eq:granularity}
 \end{equation}
 
+где $G(n)=P/n$ -- гранулярность, $P$ -- общий объём, $n$ -- размер партии.
+
 Приёмочный тест с порогом $th$: если $\hat{p}>th$, партия на salvage-рынок \cite{Indura2010}.
 
 \subsection*{Economic Traceability Lot formulation}
@@ -102,7 +108,17 @@ G(n)=\frac{P}{n}
 \label{eq:profit}
 \end{equation}
 
-где $R$ -- отклонённые партии. Оптимум: $n^*=\arg\max_n[\pi(n)]$.
+где $\pi(n)$ -- прибыль при размере партии $n$, 
+$P_r$ -- цена реализации продукции, 
+$p$ -- вероятность дефекта, 
+$C_{tr}$ -- затраты на трассировку, 
+$C_d$ -- стоимость утилизации дефектных единиц, 
+$C_{\text{tag}}$ -- стоимость RFID-меток, 
+$P$ -- общий объём партии, 
+$S_v$ -- затраты на возврат/сервис, 
+$R$ -- объём отклонённых партий. 
+
+Оптимум: $n^*=\arg\max_n[\pi(n)]$.
 
 \section*{Numerical analysis and discussion}
 

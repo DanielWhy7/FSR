@@ -40,7 +40,8 @@ This paper analyzes RFID-based traceability systems for perishable products usin
 \keywords{RFID, traceability, supply chain, perishable products, Economic Traceability Lot}
 
 \resumo{%
-Анализ RFID-трассировки скоропортящихся продуктов. Economic Traceability Lot ($n^*\approx250$) максимизирует прибыль на 1005.6\% по сравнению с отсутствием трассировки. Cost-benefit анализ и численные результаты подтверждают практичность.}
+Анализ RFID-трассировки скоропортящихся продуктов. Economic Traceability Lot ($n^*\approx250$) максимизирует прибыль на 1005.6\% по сравнению с отсутствием трассировки. Cost-benefit анализ и численные результаты подтверждают практичность.
+}
 
 \palavraschave{RFID, трассируемость, цепь поставок, скоропортящиеся продукты, Economic Traceability Lot}
 
@@ -84,7 +85,11 @@ This paper analyzes RFID-based traceability systems for perishable products usin
 \label{eq:cbr}
 \end{equation}
 
-где $G(n)=P/n$ -- гранулярность, $P$ -- объём, $n$ -- партия.
+где $\text{CBR}(n)$ -- показатель экономической эффективности трассируемости, 
+$G(n)=P/n$ -- гранулярность (размер партии), 
+$C_{\text{recall}}$ -- затраты на отзыв продукции, 
+$C_{\text{tag}}$ -- стоимость RFID-метки, 
+$C_{\text{infra}}$ -- инфраструктурные затраты.
 
 \section{RFID Technology}
 
@@ -113,7 +118,9 @@ G(n)=\frac{P}{n}
 \label{eq:granularity}
 \end{equation}
 
-Приёмочный контроль с порогом $th$.
+где $G(n)=P/n$ -- гранулярность, $P$ -- объём, $n$ -- партия.
+
+Приёмочный контроль с порогом.
 
 \subsection{Economic Traceability Lot}
 
@@ -122,6 +129,13 @@ G(n)=\frac{P}{n}
 \pi(n)=P_r(1-p)n\operatorname{Pr}(\hat{p}\leq th)-C_{tr}\frac{P}{n}
 \label{eq:profit}
 \end{equation}
+
+где $\pi(n)$ -- прибыль при размере партии $n$, 
+$P_r$ -- цена реализации, 
+$p$ -- вероятность дефекта, 
+$\operatorname{Pr}(\hat{p}\leq th)$ -- вероятность прохождения контроля качества, 
+$C_{tr}$ -- затраты на трассировку, 
+$P$ -- общий объём продукции. 
 
 Оптимум: $n^*=\arg\max_n[\pi(n)]$.
 
