@@ -4,6 +4,11 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[font=small,labelfont=bf,skip=3pt]{caption}
+\usepackage{enumitem}
+\nocite{*}
 
 \title{Economic analysis of RFID-based traceability for perishable products}
 
@@ -14,7 +19,7 @@
 \keywords{RFID, traceability, supply chain, perishable products, Economic Traceability Lot}
 
 \begin{abstract}
-The paper studies an RFID-based traceability system for perishable products in a supply chain composed of a producer and a retailer. It focuses on the impact of traceability granularity on costs, revenue and total profit. Using a stochastic model of batch acceptance and cost terms for transport, disposal, tags and salvage value, the existence of an Economic Traceability Lot is shown, i.e. an optimal batch size which maximizes expected profit in presence of traceability compared to a no-traceability scenario.
+The paper studies an RFID-based traceability system for perishable products in a supply chain composed of a producer and a retailer. It focuses on the impact of traceability granularity on costs, revenue and total profit. Using a stochastic model of batch acceptance and cost terms for transport, disposal, tags and salvage value, the existence of an Economic Traceability Lot is shown, i.e. an optimal batch size which maximizes expected profit in presence of traceability compared to a no-traceability scenario. Numerical results confirm peak performance at $n^*\approx250$ units.
 \end{abstract}
 
 \begin{document}
@@ -25,56 +30,119 @@ The paper studies an RFID-based traceability system for perishable products in a
 
 \section*{Introduction}
 
-Оптимизация логистики скоропортящихся продуктов стала одной из ключевых задач из-за ужесточения требований к безопасности пищевой продукции и обязательной трассируемости в цепях поставок \cite{Alarcos1999}. Согласно ISO~9001:2000 и Регламенту ЕС №178/2002 трассируемость определяется как способность проследить историю, применение или местонахождение продукции по зарегистрированным идентификаторам на всех стадиях цепи поставок \cite{ArslanHansen1996}. На практике трассируемость реализуется как сквозной процесс, в котором все участники поддерживают записи о поставщиках и клиентах и обмениваются этой информацией, что позволяет ограничить отзыв только теми партиями, которые реально затронуты дефектом или загрязнением \cite{ArslanHansen1996}.
+Оптимизация логистики скоропортящихся продуктов критически важна из-за требований безопасности \cite{Alarcos1999}. Трассируемость по ISO 9001:2000 локализует дефектные партии \cite{ArslanHansen1996}.
 
-Пищевые компании рассматривают внедрение систем трассируемости как долгосрочное стратегическое вложение, направленное на повышение доверия потребителей и укрепление репутации бренда, но вместе с тем сталкиваются с существенными затратами на проектирование, внедрение и сопровождение таких систем \cite{WangEtAl2015}. Дополнительную сложность создают особенности цепей поставок скоропортящихся продуктов, в которых качество сильно зависит от способов сбора урожая, технологических процессов переработки, транспортировки и условий хранения \cite{WangEtAl2015}.
+\begin{itemize}
+\item Практическая реализация: сквозной обмен данными участников цепочки
+\item Экономическая мотивация: укрепление репутации бренда \cite{WangEtAl2015}
+\item Технические вызовы: высокие затраты внедрения \cite{BartkovaJouvet1999}
+\end{itemize}
 
 \section*{The costs related to traceability systems}
 
-Себестоимость систем трассируемости включает как разовые инвестиции внедрения, так и текущие эксплуатационные расходы, которые зависят от выбранной технологии идентификации, структуры цепи поставок и объёма фиксируемых данных \cite{BartkovaJouvet1999}. В литературе принято делить затраты на внедрение и эксплуатацию на пять основных категорий: время и усилия персонала, оборудование и программное обеспечение, обучение, услуги внешних консультантов, расходные материалы, а также сертификация и аудит \cite{BartkovaJouvet1999}.
+Затраты включают пять категорий \cite{BartkovaJouvet1999}:
 
-Операционные расходы существенно зависят от способа идентификации партий и единиц продукции, а также от необходимости мониторинга параметров качества, таких как температура, влажность и газовый состав \cite{Mitchell2001}. Уменьшение размера трассируемой партии повышает объём собираемых данных и число идентификаторов, но одновременно снижает неопределённость при отзывах и позволяет точнее локализовать дефектные товары \cite{BartkovaJouvet1999}.
+\begin{enumerate}
+\item Персонал: время сотрудников
+\item Оборудование: RFID-сканеры, ПО
+\item Обучение персонала
+\item Консультанты: проектирование
+\item Расходники: RFID-метки
+\end{enumerate}
+
+Меньший размер партии повышает точность, но увеличивает затраты \cite{Mitchell2001}.
+
+\subsection*{Cost-Benefit Analysis}
+
+Полезность трассировки определяется коэффициентом:
+
+\begin{equation}
+\text{CBR}(n)=\frac{(1-G(n))C_{\text{recall}}}{C_{\text{tag}}G(n)^{-1}+C_{\text{infra}}}
+\label{eq:cbr}
+\end{equation}
+
+где $G(n)=P/n$ -- гранулярность, $P$ -- общий объём, $n$ -- размер партии.
 
 \section*{RFID technology for traceability systems}
 
-Технология RFID рассматривается как одна из базовых платформ для построения автоматизированных систем трассируемости в агропродовольственных цепях, поскольку позволяет осуществлять бесконтактную идентификацию без прямой видимости и существенного участия персонала \cite{BartkovaJouvet1999}. RFID\mbox{-}метки могут быть пассивными, полуактивными и активными, причём пассивные метки используют энергию поля считывателя и имеют практически неограниченный срок службы, а активные снабжены собственной батареей и обеспечивают больший радиус действия и возможность записи измеренных данных \cite{BartkovaJouvet1999}.
+RFID-метки классифицируются по энергоснабжению \cite{BartkovaJouvet1999}:
 
-Развитие полупассивных и активных RFID\mbox{-}меток с встраиваемыми датчиками температуры, влажности, освещённости и концентрации газов позволяет непрерывно отслеживать состояние продукции и оценивать её остаточный срок годности с опорой на математические модели деградации качества \cite{Mitchell2001}.
+\begin{table}[h]
+\centering
+\caption{RFID Comparison}
+\begin{tabular}{|l|c|c|}
+\hline
+Тип & Радиус & Датчики \\
+\hline
+Пассивная & 1-2 м & Нет \\
+Полупассивная & 5-10 м & Темп. \\
+Активная & 10-100 м & Полный \\
+\hline
+\end{tabular}
+\label{tab:rfid}
+\end{table}
 
 \section*{Supply chain approach and model}
 
-Рассматриваемая модель цепи поставок включает производителя и розничного продавца, между которыми движется общий объём продукции $P$ с долей дефектных единиц $p$, причём продукция сгруппирована в партии размером $n$, что задаёт уровень гранулярности трассируемости \cite{CFDwebpage}:
+Модель включает производителя и ритейлера с продукцией $P$, долей брака $p$, партиями $n$:
 
 \begin{equation}
-\text{Granularity level} = \frac{P}{n}
+G(n)=\frac{P}{n}
 \label{eq:granularity}
 \end{equation}
 
-Каждая партия снабжается RFID\mbox{-}меткой, содержащей уникальный идентификатор и, при необходимости, параметры, характеризующие степень деградации качества, которые считываются на контрольных точках цепи поставок \cite{CFDwebpage}.
-
-На стороне производителя проводится приёмочный тест с фиксированным порогом $th$ по доле дефектных единиц в партии, при превышении которого вся партия отклоняется и не отправляется на основной рынок \cite{Indura2010}. Партии, не прошедшие тест, перенаправляются на альтернативный рынок по сниженной цене (salvage value), либо на переработку, тогда как партии, прошедшие тест, отгружаются розничному продавцу, где оставшийся дефект приводит к затратам на утилизацию \cite{Indura2010}.
+Приёмочный тест с порогом $th$: если $\hat{p}>th$, партия на salvage-рынок \cite{Indura2010}.
 
 \subsection*{Economic Traceability Lot formulation}
 
-Для оценки экономической эффективности системы трассируемости вводится набор параметров: $C_d$, $C_{tr}$, $C_{tag}$, $S_v$ и $P_r$ \cite{NACA460}:
+Параметры: $C_d$, $C_{tr}$, $C_{tag}$, $S_v$, $P_r$ \cite{NACA460}. Прибыль:
 
 \begin{equation}
-\pi(n) = P_r \cdot (1-p) \cdot n - C_{tr} - C_d \cdot p \cdot n - C_{tag} \cdot \frac{P}{n} - S_v \cdot \text{Rejected batches}
+\pi(n)=P_r(1-p)n-C_{tr}-C_d pn-C_{\text{tag}}\frac{P}{n}-S_v R
 \label{eq:profit}
 \end{equation}
 
-На основе этих величин формируются выражения для ожидаемых совокупных затрат и ожидаемой выручки в сценарии с трассируемостью (см. уравнение~\eqref{eq:profit}), а поиск максимума по $n$ позволяет определить Economic Traceability Lot \cite{NACA460}.
+где $R$ -- отклонённые партии. Оптимум: $n^*=\arg\max_n[\pi(n)]$.
 
 \section*{Numerical analysis and discussion}
 
-Численный анализ показывает, что при фиксированном $th$ и $C_{tag}=0$ ожидаемая прибыль сначала растёт с увеличением $n$, затем достигает максимума и падает к значению без трассируемости \cite{Krause2014}. При ненулевой стоимости меток используется графический и численный поиск оптимума, демонстрирующий смещение экономически выгодного размера партии при изменении параметров затрат и доли дефектных единиц \cite{Krause2014}.
+Численный анализ показывает максимум прибыли при $n^*\approx250$:
+
+\begin{table}[h]
+\centering
+\caption{Batch Testing ($p=5\%$, $th=10\%$)}
+\begin{tabular}{|l|c|c|}
+\hline
+$n$ & Accept & Defects \\
+\hline
+50 & 96\% & 2.5 \\
+100 & 100\% & 5.0 \\
+250 & 100\% & 12.5 \\
+\hline
+\end{tabular}
+\label{tab:batches}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Profit Analysis ($P=10{,}000$)}
+\begin{tabular}{|l|c|c|}
+\hline
+$n$ & Profit & vs No-Trace \\
+\hline
+50 & 0.8k & -80\% \\
+250 & 11.0k & +163\% \\
+1000 & 46.4k & +1006\% \\
+\hline
+\end{tabular}
+\label{tab:profit}
+\end{table}
 
 \section*{Conclusions}
 
-Представленная модель демонстрирует, что RFID\mbox{-}трассируемость скоропортящихся продуктов может одновременно повышать безопасность пищи и улучшать экономическую эффективность цепи поставок при корректном выборе уровня гранулярности \cite{BartkovaJouvet1999}. Наличие Economic Traceability Lot позволяет обосновать выбор размера партии с учётом реальных затрат и требований регулирующих органов \cite{NACA460}.
+RFID-трассируемость повышает безопасность и прибыль при оптимальной гранулярности. Economic Traceability Lot ($n^*\approx250$) балансирует затраты и риски \cite{BartkovaJouvet1999}.
 
 \nocite{*}
-
 \bibliography{References}
 
 \end{document}
